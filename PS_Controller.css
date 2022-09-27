@@ -1,0 +1,523 @@
+   .second-section{
+      width: 80%;
+      margin: auto;   
+      display: flex;
+      flex-direction: column;justify-content: center;
+      align-items: center;
+  }
+
+  .second-section .colours-button{
+      display: flex;
+      
+  }
+   
+  .second-section .colours-button button{
+    color: var(--primary);
+      font-weight: lighter;
+      padding: 9px 9px;
+      font-size: 1.2rem;
+      border: none;
+      margin: 0 32px;
+      border-radius: 3px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      display: flex;
+  }
+
+  .second-section .colours-button .first{
+      background-color: var(--secondary);
+      padding: 10px 9px;
+  }
+
+  .second-section .colours-button .second{
+      background-color: whitesmoke;
+      color: var(--secondary);
+      padding: 9px 9px;
+  }
+
+  .second-section .colours-button .third{
+      background-color: red;
+      padding: 9px 20px;
+  }
+
+ 
+    .second-section .colours-available p{
+        color: var(--secondary);
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+     .second-section .interactive-image{
+        max-width: 480px;
+        min-width: 60px;
+        margin-bottom: 45px;
+
+    }
+
+    .second-section .interactive-image img{
+        width: 100%;
+    }
+     
+    :root{
+        --primary: #fff;
+        --secondary: black;
+    }
+
+    body{
+        background-color: var(--primary);
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: var(--primary);
+    scroll-behavior: smooth;
+}
+
+  header{
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      z-index: 99999999;        
+      left: 6%;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background: var(--primary);
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+
+  header ul{
+   display: flex;
+  }
+
+  header ul li{
+      list-style-type: none;
+      margin-right: 40px;
+      padding: 20px 0;
+      color: var(--secondary);
+      font-weight: bolder;
+  }
+  
+     .logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 55px;
+      min-width: 25px;  
+  }
+
+   header .logo img{
+     width: 100%;
+     height: auto; 
+     margin-left: 25px;
+   }
+   
+
+   .hamburger-menu{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       opacity: 0;
+       margin-top: 12px;
+   }
+
+   .hamburger-menu span{
+       background-color: var(--secondary);
+       margin-top: 5px;
+       height: 2px;
+       width: 25px;
+   }
+
+   .container{
+       width: 100%;
+       padding: 130px 0;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+   }
+
+   .container button{
+       background-color: hsl(0, 82%, 58%);
+       outline: none;
+       border: none;
+   }
+
+   .container button h3{
+      color: var(--primary);
+      font-weight: lighter;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 9px 9px;
+   }
+
+   .container main{
+       max-width: 480px;
+       min-width: 50px;
+   }
+
+   .container main img{
+       width: 100%;
+       height: auto;
+       margin-left: 10%;
+   }
+
+   aside{
+       margin-left: 10%;
+   }
+
+   aside h1,h2,button{
+      margin-bottom: 12px;
+      color: var(--secondary);
+   }
+
+   section{
+       width: 85%;
+       margin: 100px auto;
+       display: grid;
+       grid-template-columns: repeat(3,auto);
+       grid-template-rows: auto;
+       gap: 70px;
+       justify-content: space-between;
+   }
+
+    .card-one,.card-two,.card-three{
+         background-color: #fff;
+         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    section .card-one img{
+        width: 100%;
+    }
+
+    section .card-two img{
+        width: 100%;
+    }
+
+    section .card-three img{
+        width: 100%;
+    }
+
+    section .card-one p{
+       font-size: 1rem; 
+    }
+
+    section .card-two p{
+        font-size: 1rem;
+    }
+
+    section .card-three p{
+        font-size: 1rem;
+    }
+
+    section .card-one .sub-one{
+        width: 100%;
+    }
+
+     
+    section .card-two .sub-two{
+        width: 100%;
+    }
+
+     
+    
+    section .card-three .sub-three{
+        width: 100%;
+    }
+
+   
+    
+    @media only screen and (max-width: 1266px){
+        section .card-one p{
+       font-size: 1rem; 
+    }
+
+    section .card-two p{
+        font-size: 1rem;
+    }
+
+    section .card-three p{
+        font-size: 1rem;
+    }
+
+    .container button h3{
+      color: var(--primary);
+      font-weight: lighter;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 9px 9px;
+      font-size: 1.2rem;
+   }
+
+    }
+
+
+    @media only screen and (min-width: 1800px){
+     
+       .container main{
+       max-width: 700px;
+       min-width: 50px;
+   }
+
+   .container button h3{
+      color: var(--primary);
+      font-weight: lighter;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 9px 9px;
+      font-size: 1.5rem;
+   }
+   
+
+   
+   aside h1,h2{
+      margin-bottom: 12px;
+      color: var(--secondary);
+      font-size: 2.8rem;
+   }
+
+}
+
+   @media only screen and (max-width: 1100px){
+
+   section{
+       width: 80%;
+       margin: 100px auto;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+   }
+
+
+        section .card-one p{
+       font-size: 0.85rem; 
+    }
+
+    section .card-two p{
+        font-size: 0.85em;
+    }
+
+    section .card-three p{
+        font-size: 0.85rem;
+    }
+
+    }
+    
+
+   
+   @media only screen and (max-width: 760px){
+       
+    
+  .second-section .colours-button .first{
+      background-color: var(--secondary);
+      padding: 8px 8px;
+      font-size: 1rem;
+  }
+
+  .second-section .colours-button .second{
+      background-color: whitesmoke;
+      color: var(--secondary);
+      padding: 8px 8px;
+      font-size: 1rem;
+  }
+
+  .second-section .colours-button .third{
+      background-color: red;
+      padding: 8px 10px;
+      font-size: 1rem;
+  }
+
+
+    section .card-one p{
+       font-size: 0.7rem; 
+    }
+
+    section .card-two p{
+        font-size: 0.7rem;
+    }
+
+    section .card-three p{
+        font-size: 0.7rem;
+    }
+
+
+
+   header .logo img{
+     width: 100%;
+     height: auto;  
+     z-index: 9999; 
+   }
+
+
+    header ul{
+        background: linear-gradient(rgb(0, 0, 0),rgb(14, 13, 13));
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+        opacity: 0;
+
+    }
+    
+    header ul li{
+      list-style-type: none;
+      margin-right: 0px;
+      padding-top: 80px;
+      font-size: large;
+  }
+    
+   .hamburger-menu{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       z-index: 9999;
+       opacity: 1;
+       
+   }
+     
+   .container{
+       width: 100%;
+       padding: 130px 0;
+       margin: auto;
+       display: flex;
+       flex-direction: column-reverse;
+       justify-content: space-evenly;
+       align-items: center;
+   }
+        
+   .container main img{
+       width: 100%;
+       height: auto;
+       margin-left: 0%;
+   }
+
+   aside{
+       margin-left: 0%;
+   }
+
+   aside h1,h2{
+     font-size: 1.2rem;
+   }
+
+   }
+
+
+ 
+   @media only screen and (max-width: 360px){
+       
+
+    .second-section .interactive-image{
+        max-width: 480px;
+        min-width: 60px;
+        margin-bottom: 100px;
+
+    }
+  
+    .second-section .colours-button .first{
+      background-color: var(--secondary);
+      padding: 5px 6px;
+      font-size: 0.8rem;
+  }
+
+  .second-section .colours-button .second{
+      background-color: whitesmoke;
+      color: var(--secondary);
+      padding: 5px 6px;
+      font-size: 0.8rem;
+  }
+
+  .second-section .colours-button .third{
+      background-color: red;
+      padding: 5px 7px;
+      font-size: 0.8rem;
+  }
+
+
+    .second-section .colours-button{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .second-section .colours-button button{
+      margin-top: 22px;
+  }
+     
+       .container{
+           width: 100%;
+           padding: 130px 0;
+           margin: auto;
+           display: flex;
+           flex-direction: column-reverse;
+           justify-content: space-evenly;
+           align-items: center;
+       }
+            
+       .container main img{
+           width: 100%;
+           height: auto;
+           margin-left: 0%;
+       }
+    
+       aside{
+           margin-left: 0%;
+       }
+    
+       aside h1,h2{
+         font-size: 0.8rem;
+       }
+
+       .container button h3{
+      color: black;
+      font-size: 0.5rem;
+      font-weight: lighter;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 4px 4px;
+   }
+    
+       }
+    
+     @media only screen and (max-width: 195px){
+       
+     
+       .container{
+           width: 100%;
+           padding: 125px 0;
+           margin: auto;
+           display: flex;
+           flex-direction: column-reverse;
+           justify-content: space-evenly;
+           align-items: center;
+       }
+            
+       .container main img{
+           width: 100%;
+           height: auto;
+           margin-left: 0%;
+       }
+    
+       aside{
+           margin-left: 0%;
+       }
+    
+       aside h1,h2{
+         font-size: 0.6rem;
+       }
+
+       .container button h3{
+      color: black;
+      font-size: 0.3rem;
+      font-weight: lighter;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 3px 3px;
+   }
+    
+       }
+    
