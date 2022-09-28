@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PS Controller Site</title>
     <link rel="stylesheet" href="PS_Controller.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Open+Sans:wght@300;400&family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
     
@@ -37,8 +38,44 @@
         <aside>
         <h1>PS4</h1>
         <h2>experience gaming</h2>
-        <button><h3>Log in</h3></button>
+        <button onclick="loginForm()"><h3 id="login-btn">Log in</h3></button>
     </aside>
+    <!-- log in form -->
+    <div id="login-container">
+      <div class="screen">
+        <div class="screen__content">
+          <form class="login">
+            <div class="login__field">
+              <i class="login__icon fas fa-user"></i>
+              <input type="text" class="login__input" placeholder="User name / Email">
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input type="password" class="login__input" placeholder="Password">
+            </div>
+            <button class="button login__submit">
+              <span class="button__text">Log In Now</span>
+              <i class="button__icon fas fa-chevron-right"></i>
+            </button>				
+          </form>
+          <div class="social-login">
+            <h3>log in via</h3>
+            <div class="social-icons">
+              <a href="#" class="social-login__icon fab fa-instagram"></a>
+              <a href="#" class="social-login__icon fab fa-facebook"></a>
+              <a href="#" class="social-login__icon fab fa-twitter"></a>
+            </div>
+          </div>
+        </div>
+        <div class="screen__background">
+          <span class="screen__background__shape screen__background__shape4"></span>
+          <span class="screen__background__shape screen__background__shape3"></span>		
+          <span class="screen__background__shape screen__background__shape2"></span>
+          <span class="screen__background__shape screen__background__shape1"></span>
+        </div>		
+      </div>
+    </div>
+
     <main>
         <img src="controller.png" alt="">
     </div>
