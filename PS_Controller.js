@@ -59,3 +59,12 @@
                   document.getElementById('login-container').style.display="";
             }
       }
+//loader js
+
+window.addEventListener('load', function() {
+      const loaderContainer = document.querySelector('.loader-container');
+      setTimeout(function() {
+        loaderContainer.style.display = 'none';
+      }, 1000); 
+    });
+    
