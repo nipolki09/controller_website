@@ -50,7 +50,7 @@
       function loginForm(){
             let display = document.getElementById('login-container').style.display;
             if (display===""){
-                  document.getElementById('login-btn').innerHTML = "Close Form";
+                  document.getElementById('login-btn').innerHTML = "Back";
                   document.getElementById('login-container').style.display="block";
 
             }
