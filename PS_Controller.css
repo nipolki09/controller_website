@@ -147,6 +147,8 @@
        background-color: hsl(0, 82%, 58%);
        outline: none;
        border: none;
+       border-radius: 10px;
+       /* added border radius for nice visual */
    }
 
    .container button h3{
@@ -197,6 +199,7 @@
 
     section .card-two img{
         width: 100%;
+       
     }
 
     section .card-three img{
