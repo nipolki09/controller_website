@@ -12,7 +12,7 @@
 
         buttons[0].addEventListener('mouseover' , () => {
 
-             let settingAttribute = changeImage.setAttribute("src",loadImage[0]);
+             let settingAttribute = changeImage.setAttribute("src", `images/${loadImage[0]}`);
 
              changeImage.style.transform = "translateY(" + (-50) + "px)";
 
@@ -20,12 +20,16 @@
 
               console.log(settingAttribute);
         });
+       buttons[0].addEventListener('mouseleave', () => {
+            changeImage.style.transform = "translateY(0px)";
+            changeImage.style.transition = "1.2s";
+       });
 
         buttons[1].addEventListener('mouseover' , eventSecond)
 
           function eventSecond() {
 
-             let settingAttribute = changeImage.setAttribute("src",loadImage[1]);
+             let settingAttribute = changeImage.setAttribute("src",`images/${loadImage[1]}`);
 
              changeImage.style.transform = "translateY(" + (-50) + "px)";
 
@@ -33,11 +37,15 @@
 
               console.log(settingAttribute);
         };
+        buttons[1].addEventListener('mouseleave', () => {
+            changeImage.style.transform = "translateY(0px)";
+            changeImage.style.transition = "1.2s";
+       });
            
 
         buttons[2].addEventListener('mouseover' , () => {
 
-             let settingAttribute = changeImage.setAttribute("src",loadImage[2]);
+             let settingAttribute = changeImage.setAttribute("src",`images/${loadImage[2]}`);
 
              changeImage.style.transform = "translateY(" + (-50) + "px)";
 
@@ -45,6 +53,10 @@
              
               console.log(settingAttribute);
         });
+        buttons[2].addEventListener('mouseleave', () => {
+            changeImage.style.transform = "translateY(0px)";
+            changeImage.style.transition = "1.2s";
+       });
 
 
       function loginForm(){

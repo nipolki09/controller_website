@@ -22,7 +22,7 @@ const tablas = listofcontrollers.map( control => {
           </tr>
           <tr>
             <td>
-                <a href="${ control.url }" target="_blank">
+                <a href="${ control.url }">
                     <p class="btn">Ver Más</p>
                 </a>
             </td>

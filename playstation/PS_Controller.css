@@ -1,4 +1,7 @@
-   .second-section{
+button{
+    cursor: pointer;
+}
+.second-section{
       width: 80%;
       margin: auto;   
       display: flex;
