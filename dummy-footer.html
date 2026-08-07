@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Footer Styles */
+        .site-footer {
+            background-color: #f8f9fa; /* Light grey background */
+            color: #333;
+            padding: 50px 0 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        /* Branding Section */
+        .footer-branding .logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .footer-branding p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0 0 20px;
+        }
+
+        /* Navigation & Social Links */
+        .footer-links h4,
+        .footer-social h4 {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1a237e; /* Dark blue color from logo */
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .footer-links ul,
+        .footer-social ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links ul li,
+        .footer-social ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul li a,
+        .footer-social ul li a {
+            text-decoration: none;
+            color: #555;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .footer-links ul li a:hover,
+        .footer-social ul li a:hover {
+            color: #ef5350; /* Red hover color from logo */
+        }
+
+        /* Bottom Bar */
+        .footer-bottom {
+            background-color: #1a237e; /* Dark blue footer bottom */
+            color: #fff;
+            padding: 15px 0;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 13px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-branding .logo {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Content Area (Optional) -->
+    <div style="height: 50vh; display: flex; justify-content: center; align-items: center; background-color: #eee;">
+        <h1>Your Main Website Content</h1>
+    </div>
+
+    <!-- The Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-branding">
+                <img src="your-logo.png" alt="Stellar Sessions Logo" class="logo"> <!-- Replace 'your-logo.png' with your actual logo image path -->
+                <p>Welcome to Stellar Sessions, the hub for all your gaming needs. Join our community and elevate your experience.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Explore Games</a></li>
+                    <li><a href="#">Join a Tournament</a></li>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">Support Center</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Company Info</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Discord Server</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <p>&copy; 2023 Stellar Sessions Gaming Unlimited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
