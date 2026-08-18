@@ -534,10 +534,9 @@
     cursor: pointer;
 }
 
-/* body {
+body {
 	background: linear-gradient(90deg, #C7C5F4, #776BCC);		
-} */
-
+} 
 #login-container {
 	align-items: center;
 	justify-content: center;
@@ -637,7 +636,7 @@
 	font-weight: 700;
 	width: 75%;
 	transition: .2s;
-    color : #333333;
+    color : #711a1a;
 }
 
 .login__input:active,
